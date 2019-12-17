@@ -1595,6 +1595,7 @@ img{
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
+	height: 100vh;
 }
 
 .banner-section .icon-circle-11{
