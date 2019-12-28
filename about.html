@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:40:57 GMT -->
+<!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:38:32 GMT -->
 <head>
 <meta charset="utf-8">
-<title>Fizcon -  HTML Template | About Us</title>
+<title>IEEE TechX Congress</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
+<link rel="icon" href="images/favicon1.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,66 +19,459 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<!--Personalised Styles-->
+<style type="text/css">
+body{
+    scroll-behavior: smooth !important;
+}
+.topics-section-two.style-two .auto-container{
+	padding: 0px 30px;
+}
+.content-details{
+	margin-bottom: 70px;
+}
+/*////////topic section/////////*/
+.topic-section{
+ width: 100vw;
+ margin: 0 auto;
+ background-color: #41209f;
+ color: #fff;
+ height: unset; 
+}
+.topic-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-family: sans-serif;
+	font-size: 34px;
+	padding-top: 50px ;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+.list .inner-column{
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.list .inner-column .info-box{
+	display: flex;
+    overflow: hidden;
+	padding: 50px;
+	font-size: 18px;
+}
+.list .inner-column .info-box span{
+	color: #12114a;
+	background-color: #fff;
+	padding: 9px;
+	padding-right: 11px;
+	padding-left: 11px;
+	border-radius: 50%;
+}
+.list .inner-column .info-box .text{
+	line-height: 19px;
+	padding-left: 15px;
+	padding-top: 13px;
+}
+.slides .button{
+	top: 100px;
+}
+.slides{
+	overflow: hidden;
+}
+.slides .itemslide{
+   
+	width: 35vw;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+	margin-bottom: 10px;
+	position: absolute;
+	padding-top: 60px;
+	
+	transition: all 0.2s ease-in-out;
+	display: none;
+}
+.slides .itemslide.theactive{
+	animation: opacanim 0.3s 1;
+	display: grid;
+}
+@keyframes opacanim{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.topic-container .itemslide .item-icon{
+ 	font-size: 78px;
+ 	text-align: center;
+ 	padding-bottom: 20px;
+ 	
+ 	transition: all 0.3s ease-in-out;
+ 	transition-delay: 0.9s;
+ }
+ .topic-container .itemslide .item-details{
+ 	text-align: center;
+ 	
+ 	transition: all 0.3s ease-in-out;
+ 		transition-delay: 0.9s;
+ }
+ .itemslide.theactive .item-icon{
+ 	animation: scaleicon 0.6s 1;
+ 	
+ }
+ @keyframes scaleicon{
+ 	0%{
+ 		transform: scale(0);
+ 	}
+ 	100%{
+ 		transform: scale(1);
+ 	}
+ }
+  .itemslide.theactive .item-details{
+  	animation: animdetails 0.6s 1;
+  }
+   @keyframes animdetails{
+ 	0%{
+ 		transform: translateY(120px);
+ 	opacity: 0;
+ 	}
+ 	100%{
+ 		  	opacity: 1;
+  	transform: translateY(0px);
+ 	}
+ }
+@media only screen and (max-width: 1040px){
+	.topic-section{
+		height: unset!important;
+	}
+	.topic-container{
+		grid-template-rows: 1fr 1fr!important;
+		grid-template-columns: unset!important;
+	}
+	.list .inner-column .info-box{
+		font-size: 17px!important;
+	}
+	.slides .button{
+		font-size: 20px!important;
+	}
+	.list .inner-column .info-box span{
+		padding: 0px!important;
+		height: 50px!important;
+		width: 50px!important;
+		padding-top: 16px!important;
+		text-align: center!important;
+	}
+}
+/*////////end topic section/////////*/
+.about-section .image-box{
+	background-color: #fff;
+}
+.page-wrapperz{
+    scroll-behavior: smooth !important;
+}
+*{
+    scroll-behavior: smooth;
+}
+.banner-section{
+	height: 100vh !important;
+	overflow: hidden;
+}
+.banner-section .owl-carousel.owl-loaded{
+	height: 100vh!important;
+}
+.banner-section .owl-stage-outer.owl-height{
+	height: 100vh!important;
+}
+.banner-section .owl-item{
+	height: 100vh!important;
+}
+.banner-section .slide-item{
+	height: 100vh!important;
+}
+.banner-section .owl-carousel .owl-stage{
+	height: 100vh!important;
+}
+ul.speakers-type-list{
+        position: relative;
+        float: right;
+        right: 55px;
+        z-index: 9;
+        top: -180px;
+        height: 20px;
+        list-style: none;
+        text-align: center;
+        display: block;
+        background: rgba(255,255,255,0.3);
+}
+ul.speakers-type-list li{   
+        list-style: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px;
+        transition: all 0.2s ease-in-out;
+}
+ul.speakers-type-list .speakers-active:hover li{
+        display: block !important;
+}
+.speakers-active{
+        display: block !important;
+        font-size: 23px!important;
+        color: #12114a!important;
+        
+}
+.auto-container .row .speaker-block-two{
+        transition: all 0.3s ease-in-out;
+    }
+.auto-container .row{
+        transition: all 0.3s ease-in-out;
+    }
+.speaker-block-two .image img{
+        transition: all 0.2s ease-in-out
+    }
+.speaker-block-two .image-box .image{
+    	
+    }
+.events-section{
+    	background-color: rgb(18, 17, 74)!important;
+    	padding-top: 30px;
+    }
+.events-carousel .content-column .text{
+    	color: #fff;
+    }
+.Countdown-timer{
+    	width: 100%;
+    	background-color: transparent!important;
+    	font-size: 36px;
+    	text-align: center;
+    	
+    	color: #fff;
+    	font-weight: lighter;
+    	
+    }
+.Countdown-timer span{
+    	
+    }
+.Countdown-timer span.countdown-inner-container{
+    	
+    	display: grid;
+    	grid-template-rows: 1fr 1fr;
+    	grid-gap: 25px;
+    }
+.Countdown-timer span span.countdown-inner-container span{
+    	padding: 0!important;
+    	margin: 0!important;
+    
+    	
+    	
+    }
+.Countdown-timer span span.countdown-inner-container .number-part{
+    	font-weight: 800;
+    	font-size: 70px;
+    }
+.location-section{
+	
+}
+.location-section .slide-item{
+}
+.location-section .owl-carousel .owl-item img{
+	width: 50%;
+	height: auto;
+	margin:0 auto;
+}
+.location-section .owl-nav{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	margin-top: -25px;
+}
+.location-section .owl-next,
+.location-section .owl-prev{
+	position: absolute;
+	left: 60px;
+	top: 0;
+	font-size: 30px;
+	line-height: 50px;
+	color: #12114a;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.location-section .owl-next{
+	left: auto;
+	right: 60px;
+}
+.location-section .owl-next:hover,
+.location-section .owl-prev:hover{
+	color: #f20487;
+}
+@media only screen and (max-width: 990px){
+	.location-section .owl-carousel .owl-item img{
+		width: 100%;
+	}
+	.content-details{
+		border-bottom: 1px solid #12114a;
+	}
+	.content-details .text{
+		padding-bottom: 15px;
+	}{
+	}
+	.topics-section-two .content-column{
+		padding-top: 10px;
+	}
+	.kol-sec-details{
+		margin-bottom: 20px;
+	}
+}
+.banner-section .slide-item{
+	padding: 0!important;
+}
+.events-carousel .info-column .info-box.date .text{
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+.events-section .slide-item .title{
+	text-align: center;
+}
+.events-section .slide-item .title i{
+   font-size: 90px;
+}
+@media only screen and (max-width: 1366px){
+	.banner-section .slide-item{
+		padding: 0!important;
+	}
+}
+ .banner-section .content-box .text{
+ 	
+ 	padding-left: 30px!important;
+ }
+ .banner-section .content-box .btn-box{
+ 	margin-left: 30px;
+ }
+ .banner-section .content-box{
+    	transform: translateY(-50%);
+    margin-top: 37% !important;
+    }
+@media only screen and (max-width: 1040px){
+    .banner-section .content-box{
+    	transform: translateY(-50%);
+        margin-top: 48% !important;
+    }
+    .banner-section .content-box .btn-box{
+ 	    margin-left: 0px;
+    }
+    .banner-section .content-box {
+        width: 100%;
+        text-align: center;
+    }
+ @media only screen and (min-width: 930px){
+ 	
+      .banner-section .content-box .text{
+ 	       font-size: 33px;
+ 	       padding-left: 0px;
+       }
+ }
+}
+@media only screen and (max-width: 767px){
+    .banner-section .content-box{
+    	
+        margin-top: 63% !important;
+    }
+}
+    
+@media only screen and (max-width: 900px){
+    ul.speakers-type-list{
+        display: flex;
+        flex-wrap: wrap;
+        right: unset;
+        float: none;
+        top: -30px;
+    }
+    .Countdown-timer span span.countdown-inner-container .number-part{
+    	font-size: 30px;
+    }
+    .Countdown-timer span span.countdown-inner-container span{
+    	padding-right: 0!important;
+    	padding-left: 0!important;
+    }
+    .Countdown-timer span.countdown-inner-container{
+    	margin-right: 0px;
+    	grid-gap: 12px;
+    }
+    .Countdown-timer{
+    	font-size: 17px;
+    	font-weight: 400;
+    }
+    .mycontainer .icon.icon-circle-2{
+    	opacity: 0.001 !important;
+    }
+}
+</style>
+<!--End Personalised Styles-->
+
 </head>
 
 <body>
 
 <div class="page-wrapper">
  	
-    <!-- Preloader -->
+     <!-- Preloader -->
     <div class="preloader"></div>
  	
     <!-- Main Header-->
-    <header class="main-header">
-        <!--Header-Upper-->
+    <header class="main-header header-style-three">
+    	<!--Header-Upper-->
         <div class="header-upper">
-            <div class="outer-container">
-                <div class="clearfix">
-                    <div class="pull-left logo-box">
-                        <div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+        	<div class="outer-container">
+            	<div class="clearfix">
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="#"><img src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
+                   	
+                   	<div class="nav-outer clearfix">
                     
-                    <div class="nav-outer clearfix">
-                    
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-md">
-                            <div class="navbar-header">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
-                                <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="#">Home</a>
-                                        <ul>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="#">Home</a>
+                                        <!--<ul>
                                             <li><a href="index-2.html">Home page 01</a></li>
                                             <li><a href="index-3.html">Home page 02</a></li>
                                             <li><a href="index-4.html">Home page 03</a></li>
                                             <li><a href="index-5.html">Home page 04</a></li>
-                                        </ul>
+                                        </ul>-->
                                     </li>
-                                    <li class="current dropdown"><a href="#">About</a>
-                                        <ul>
+                                    <li class="dropdown"><a href="#about">About</a>
+                                        <!--<ul>
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="pricing.html">Pricing</a></li>
                                             <li><a href="login.html">login</a></li>
                                             <li><a href="sign-up.html">Sign Up</a></li>
                                             <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
+                                        </ul>-->
                                     </li>
-                                    <li class="dropdown has-mega-menu"><a href="#">Pages</a>
+<!--                                     <li class="dropdown has-mega-menu"><a href="#">Pages</a>
                                         <div class="mega-menu">
                                             <div class="mega-menu-bar row no-gutters">
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <ul>
+                                                <div class="column col-lg-3 col-md-3 col-sm-12"> -->
+                                                    <!-- <ul>
                                                         <li><i class="flaticon-avatar"></i><a href="index-2.html">Home page 01</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="index-3.html">Home page 02</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="index-4.html">Home page 03</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="index-5.html">Home page 04</a></li>
-                                                    </ul>
-                                                </div>
+                                                    </ul> -->
+                                                <!-- </div>
                                                 <div class="column col-lg-3 col-md-3 col-sm-12">
                                                     <ul>
                                                         <li><i class="flaticon-avatar"></i><a href="about.html">About</a></li>
@@ -103,38 +496,62 @@
                                                         <li><i class="flaticon-avatar"></i><a href="project.html">Project</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="shop.html">Shop</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="shop-single.html">Shop Single</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="contact.html">Contact</a></li>
+                                                        <li><i class="flaticon-avatar"></i><a href="register.html">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="speakers.html">Speakers</a></li>
-                                    <li><a href="schedule.html">Schedule</a></li>
-                                    <li class="dropdown"><a href="#">Blog</a>
+                                        </div> -->
+                                    <!-- </li> -->
+                                    <li><a href="#sch">Schedule</a></li>
+                                    <li><a href="#speakers-section">Speakers</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="#spns">Sponsors</a></li>
+                                    <!-- <li class="dropdown"><a href="#">Blog</a>
                                         <ul>
                                             <li><a href="blog.html">Blog</a></li>
                                             <li><a href="blog-single.html">Blog Single</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    </li> -->
+                                    <li><a href="#footer">Contact</a></li>
                                 </ul>
-                            </div>
-                        </nav>
-                        
-                        <!-- btn box -->
-                        <div class="btn-box">
-                            <a href="contact.html" class="theme-btn btn-style-one">Buy Tickets</a>
-                        </div>
+							</div>
+						</nav>
+						
+						<!-- btn box -->
+						<!-- <div class="btn-box"> -->
+                            <!-- Cart button -->
+                            <!-- <div class="cart-btn"> -->
+                                <!-- <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart-1"></span></a> -->
+                            <!-- </div> -->
 
-                    </div>
-                    <!--Outer Box-->
-                    <div class="outer-box">
-                        <!-- Nav Toggler -->
+                            <!--Search Box-->
+                            <!-- <div class="search-box-outer">
+                                <div class="dropdown">
+                                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-search-1"></span></button>
+                                    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                        <li class="panel-outer">
+                                            <div class="form-container">
+                                                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/blog.html">
+                                                    <div class="form-group">
+                                                        <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                        <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+						</div>
+ -->
+					</div>
+					<!--Outer Box-->
+					<!--<div class="outer-box">
+                        
                         <div class="nav-toggler">
-                            <button class="nav-btn"><span class="icon flaticon-arrows"></span></button>
-                        </div>
-                    </div>
+	                        <button class="nav-btn"><span class="icon flaticon-arrows"></span></button>
+	                    </div>
+					</div>-->
                 </div>
             </div>
         </div>
@@ -143,19 +560,19 @@
     <!--End Main Header -->
 
     <!--Form Back Drop-->
-    <div class="form-back-drop"></div>
+    <!--<div class="form-back-drop"></div>-->
     
     <!-- Hidden Bar -->
-    <section class="hidden-bar">
+    <!--<section class="hidden-bar">
         <div class="inner-box">
             <div class="cross-icon"><span class="fa fa-times"></span></div>
             <div class="title">
                 <h2>Get Appointment</h2>
             </div>
             
-            <!--Appointment Form-->
+            
             <div class="appointment-form">
-                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/contact.html">
+                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/register.html">
                     <div class="form-group">
                         <input type="text" name="text" value="" placeholder="Name" required>
                     </div>
@@ -174,10 +591,10 @@
                 </form>
             </div>
             
-            <!--Contact Info Box-->
+            
             <div class="contact-info-box">
                 <ul class="info-list">
-                    <li><a href="http://sitetemplate.demo.ithemeslab.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70131f1e041113043016190a131f1e5e131f1d">[email&#160;protected]</a></li>
+                    <li><a href="http://sitetemplate.demo.ithemeslab.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="debdb1b0aabfbdaa9eb8b7a4bdb1b0f0bdb1b3">[email&#160;protected]</a></li>
                     <li>+(123) 456 7890</li>
                 </ul>
                 <ul class="social-list clearfix">
@@ -189,7 +606,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section>-->
     <!--End Hidden Bar -->
 
     <!--Page Title-->
@@ -214,20 +631,20 @@
         <span class="float-text">About The</span>
         <div class="auto-container">
             <div class="sec-title">
-                <h2>About The Theme</h2>
+                <h2>About IEEE</h2>
             </div>
 
             <div class="about-carousel owl-carousel owl-theme">
                 <!-- Slide Item -->
                 <div class="slide-item clearfix">
                     <div class="image-box">
-                        <figure class="image"><img src="images/resource/about-img-2.jpg" alt=""></figure>
+                        <figure class="image"><img src="images/resource/ieee.png" alt=""></figure>
                     </div>
                     <div class="content-box">
                         <div class="inner-box">
-                            <span class="title">Research & Concept</span>  
-                            <h3>Pixel Pioneers Belfast 2019</h3>
-                            <div class="text">Pixel Pioneers, a one-day conference for web and UX designers and front-end developers, will take place on the 23rd of November 2019 in Belfast.</div>
+                            <!--span class="title">Research & Concept</span-->  
+                            <h3>About IEEE</h3>
+                            <div class="text">IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity with More than 422,000 members in more than 160 countries. IEEE and its members inspire a global community through its highly cited publications, conferences, technology standards, and professional and educational activities.IEEE communities are active participants in research and authorship, conferences, and important conversations about today's most relevant technical topics locally and globally.</div>
                             <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Register Now</a></div>
                         </div> 
                     </div>
@@ -236,23 +653,77 @@
                 <!-- Slide Item -->
                 <div class="slide-item clearfix">
                     <div class="image-box">
-                        <figure class="image"><img src="images/resource/about-img-1.jpg" alt=""></figure>
+                        <figure class="image"><img src="images/resource/ieeecs.png" alt=""></figure>
                     </div>
                     <div class="content-box">
                         <div class="inner-box">
-                            <span class="title">Research & Concept</span>  
-                            <h3>Pixel Pioneers Belfast 2019</h3>
-                            <div class="text">Pixel Pioneers, a one-day conference for web and UX designers and front-end developers, will take place on the 23rd of November 2019 in Belfast.</div>
+                            <!--span class="title">Research & Concept</span-->  
+                            <h3>IEEE Computer Scociety</h3>
+                            <div class="text">The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers. Our trusted resources include international conferences, peer-reviewed publications, a robust digital library, globally recognized standards, and continuous learning opportunities.</div>
                             <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Register Now</a></div>
                         </div> 
                     </div>
                 </div>
+
+				
             </div>
         </div>
     </section>
+	
+	    <section class="about-section">
+        <div class="anim-icons">
+            <span class="icon icon-cross-1"></span>
+            <span class="icon icon-circle-9"></span>
+        </div>
+        <span class="float-text">About The</span>
+        <div class="auto-container">
+            <div class="sec-title">
+                <h2>About IEEE Kolkata Section and Host Branches</h2>
+            </div>
+
+            <div class="about-carousel owl-carousel owl-theme">
+                <!-- Slide Item -->
+                <div class="slide-item clearfix">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/resource/ieeek.png" alt=""></figure>
+                    </div>
+                    <div class="content-box">
+                        <div class="inner-box">
+                            <!--span class="title">Research & Concept</span-->  
+                            <h3>IEEE Kolkata Section</h3>
+                            <div class="text">IEEE Kolkata Section comes under Asia-Pacific Region, the Region 10 of IEEE. The Eastern Regional Sub-Section of IEEE in India, was formed way back in 1971. It was given the name of Calcutta Sub-Section, under the Delhi Section of IEEE, India after the formation of the India Council. The Calcutta Sub-Section was later raised to the status of a full section on September 28, 1978. Over the years, the activities of IEEE Kolkata Section have increased manifold and spread through many cities and state capitals under the Section. IEEE Kolkata Section currently has 11 chapters, 2 affinity groups and more than 15 student branches . The mission of IEEE Kolkata Section is to spread IEEE activities to all remote corners through conferences and seminars, and to develop technological solutions for humanitarian challenges. The Section maintains a healthy student to member ratio and works closely and coherently with its chapters and affinity groups not only in technical, education and membership development activities but also in outreach activities.</div>
+                            <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Register Now</a></div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- Slide Item -->
+                <div class="slide-item clearfix">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/resource/ieeesb.png" alt=""></figure>
+                    </div>
+                    <div class="content-box">
+                        <div class="inner-box">
+                            <!--span class="title">Research & Concept</span-->  
+                            <h3>Host Branches </h3>
+                            <div class="text">Knowledge is power. When shared, it's multiplied !" With this vision to augment the atmosphere which encourages advancement in research and technology in our community, IEEE CS SYP is organizing TechX- an endeavor to inculcate the habit of thinking in every individual who comes along, under the banner of KOLKATA SECTION with the co-hosts as IEEE SB NIT Durgapur and IEEE SB Jadavpur University. Both the branches have organized numerous events, hands-on workshops and keynote speeches on an assortment of topics and fields of technology. The impact we created is established by the volume of the crowd who attend our events from all across the society and the collaborations with tech giants like Google, Facebook, Unity, Intel, and Capgemini. With TechX, we aim to carry out our vision of spreading awareness at a grander scale!</div>
+                            <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Register Now</a></div>
+                        </div> 
+                    </div>
+                </div>
+
+				
+            </div>
+        </div>
+    </section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
     <!--End About Section -->
 
-    <!-- Fun Fact Section -->
+    <!-- Fun Fact Section >
     <section class="fun-fact-section-two">
         <div class="anim-icons">
             <span class="icon icon-circle-10"></span>
@@ -261,7 +732,7 @@
         <div class="auto-container">
             <div class="fact-counter">
                 <div class="row clearfix">
-                    <!--Column-->
+                    <!--Column>
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                         <div class="count-box">
                             <span class="icon flaticon-mug"></span>
@@ -270,7 +741,7 @@
                         </div>
                     </div>
 
-                    <!--Column-->
+                    <!--Column>
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                         <div class="count-box">
                             <span class="icon flaticon-launch"></span>
@@ -279,7 +750,7 @@
                         </div>
                     </div>
 
-                    <!--Column-->
+                    <!--Column>
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                         <div class="count-box">
                             <span class="icon flaticon-lady"></span>
@@ -288,7 +759,7 @@
                         </div>
                     </div>
 
-                    <!--Column-->
+                    <!--Column>
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
                         <div class="count-box">
                             <span class="icon flaticon-support-1"></span>
@@ -302,7 +773,7 @@
     </section>
     <!--End Fun Fact Section -->
 
-    <!-- About Event -->
+    <!-- About Event >
     <section class="about-event">
         <div class="anim-icons">
             <span class="icon icon-circle-13"></span>
@@ -313,7 +784,7 @@
         </div>
         <div class="auto-container">
             <div class="row">
-                <!-- Content Column -->
+                <!-- Content Column >
                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">   
                         <div class="sec-title"><h2>Join the biggest event  in 2019 with experienced Speaker.</h2></div>
@@ -328,7 +799,7 @@
                     </div>
                 </div>
 
-                <!-- Image Column -->
+                <!-- Image Column >
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box wow fadeInRight">
                         <figure class="image-box"><img src="images/resource/image-2.png" alt=""></figure>
@@ -339,7 +810,7 @@
     </section>
     <!--End About Event -->
     
-    <!-- Speakers Section Two -->
+    <!-- Speakers Section Two >
     <section class="speakers-section-two style-two alternate-2">
         <span class="float-text">Event Speaker</span>
         <div class="auto-container">
@@ -348,7 +819,7 @@
             </div>            
 
             <div class="row">
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-1.jpg" alt=""></figure>
@@ -362,7 +833,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-2.jpg" alt=""></figure>
@@ -376,7 +847,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-3.jpg" alt=""></figure>
@@ -390,7 +861,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-4.jpg" alt=""></figure>
@@ -404,7 +875,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-5.jpg" alt=""></figure>
@@ -418,7 +889,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-6.jpg" alt=""></figure>
@@ -432,7 +903,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-7.jpg" alt=""></figure>
@@ -446,7 +917,7 @@
                     </div>
                 </div>
 
-                <!-- Feature Block -->
+                <!-- Feature Block >
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
                     <div class="image-box">
                         <figure class="image"><img src="images/resource/speaker-8.jpg" alt=""></figure>
@@ -464,7 +935,7 @@
     </section>
     <!--End Speakers Section -->
 
-    <!-- Sponsor Section -->
+    <!-- Sponsor Section >
     <section class="sponsor-section style-two" style="background-image: url(images/background/1.jpg);">
         <span class="float-text">Our Sponsor</span>
         <div class="auto-container">
@@ -498,7 +969,7 @@
     </section>
     <!--End Sponsor Section -->
 
-    <!-- Location Section Two -->
+    <!-- Location Section Two >
     <section class="location-section-two style-two">
         <div class="anim-icons">
             <span class="icon icon-cross-1"></span>
@@ -512,7 +983,7 @@
                 <h2>Locations</h2>
             </div>
             <div class="row">
-                <!-- Info Block -->
+                <!-- Info Block >
                 <div class="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
@@ -525,7 +996,7 @@
                     </div>
                 </div>
 
-                <!-- Info Block -->
+                <!-- Info Block >
                 <div class="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
@@ -538,7 +1009,7 @@
                     </div>
                 </div>
 
-                <!-- Info Block -->
+                <!-- Info Block >
                 <div class="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
@@ -555,8 +1026,8 @@
     </section>
     <!--End Location Section -->
 
-     <!-- Main Footer -->
-    <div class="main-footer style-two">    
+    <!-- Main Footer -->
+    <div class="main-footer" id="footer">    
         <div class="anim-icons">
             <span class="icon icon-twist-line-1 wow zoomIn"></span>
             <span class="icon icon-circle-6 wow zoomIn" data-wow-delay="400ms"></span>
@@ -564,53 +1035,76 @@
             <span class="icon icon-circle-8 wow zoomIn" data-wow-delay="1200ms"></span>
         </div>
         <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="title">Get The Latest Offers</span>
-                <h2>Subscribe To Newsletter</h2>
+            <div class="sec-title text-center light">
+                <!--<span class="title">TechX</span>-->
+                <h2>TechX</h2>
+                <p style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
             </div>
 
             <!--Newsletter Form-->
-            <div class="newsletter-form">
+            <!--<div class="newsletter-form">
                 <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/blog.html">
                     <div class="form-group">
                         <input type="email" name="field-name" value="" placeholder="email@gmail.com" required>
                         <button type="submit" class="theme-btn btn-style-three">Send</button>
                     </div>
                 </form>
-            </div>
+            </div>-->
 
             <!-- Social Links -->
             <div class="social-links">
                 <ul>
-                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-dribbble"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    <li><a href="https://www.facebook.com/techX.congress/"><span class="fab fa-facebook-f"></span></a></li>
+                    <!--<li><a href="#"><span class="fab fa-twitter"></span></a></li>-->
+                    <!--<li><a href="#"><span class="fab fa-dribbble"></span></a></li>-->
+                    <li><a href="https://www.instagram.com/techx_ieee/"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="mailto:techx.congress@gmail.com"><span class="fa fa-envelope"></span></a></li>
                 </ul>
             </div>
 
-            <!-- Footer Bottom -->
-            <div class="footer-bottom clearfix">
-                <div class="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
+
+            <!-- Footer Nav -->
+            <div class="footer-nav">
                 <ul>
-                    <li>We Accept </li>
-                    <li><a href="#"><img src="images/icons/cart-1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icons/cart-2.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icons/cart-3.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icons/cart-4.jpg" alt=""></a></li>
-                </ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sch">Schedule</a></li>
+                    <li><a href="#speakers-section">Speakers</a></li>
+                    <li><a href="#spns">Sponsors</a></li>
+                    <!--<li><a href="#">Schedule</a></li>-->
+                    <!--<li><a href="#">Venue</a></li>-->
+                </ul>                                  
             </div>
+
             <!-- Copyright -->
+            <div class="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
         </div>
     </div>
     <!-- End Footer -->
     
+
 </div>
 <!--End pagewrapper-->
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "106056827487524", // Facebook page ID
+            email: "techx.congress@gmail.com", // Email
+            call_to_action: "Hi there!", // Call to action
+            button_color: "#932C8B", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,email", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
 
 <!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<!--<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>-->
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -619,10 +1113,186 @@
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
+<script src="js/magnific-popup.min.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($){
+
+        $(".speakers-type-list li").click(function(){
+            $(".speakers-type-list li").removeClass('speakers-active');
+            $(this).addClass("speakers-active");
+            if($(this).hasClass("Networking")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .Networking").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else if($(this).hasClass("Leadership")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .Leadershipis").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else if($(this).hasClass("IOT")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .IOT").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else if($(this).hasClass("ML")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .ML").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else  if($(this).hasClass("all")){
+               $(".auto-container .row .speaker-block-two").css("transform","scale(1)").css("display","block"); 
+            }
+        })
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("feb 28, 2020 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("days").innerHTML = days +"";
+  document.getElementById("hours").innerHTML = hours+"";
+  document.getElementById("minutes").innerHTML = minutes+"";
+  document.getElementById("seconds").innerHTML =seconds+"";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var EarlyRegdate = new Date("jan 15, 2020 23:59:59").getTime();
+	var timenow = new Date().getTime();
+	if(timenow<EarlyRegdate){
+		$(".Regular-Plan").css("display","none");
+		$(".Early-bird").css("display","block");
+	}
+	else{
+		$(".Regular-Plan").css("display","block");
+		$(".Early-bird").css("display","none");
+	}
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+
+
+jQuery(document).ready(function ($){
+	var width = $(".slides").width();
+	$('.itemslide').css("width",width+"px");
+  var slides = $('.itemslide');
+ 
+slides.first().before(slides.last());
+
+
+ setInterval(function(){
+
+ slides = $('.itemslide');
+
+  var button = $(this);
+
+  var activeSlide = $('.theactive');
+
+    slides.last().after(slides.first());
+   
+    activeSlide.removeClass('theactive').next('.itemslide').addClass('theactive');
+  
+
+  
+
+}, 4000);
+
+
+
+$('.button').on('click', function() {
+
+  slides = $('.itemslide');
+
+  var button = $(this);
+ 
+  var activeSlide = $('.theactive');
+
+
+  if (button.attr('id') == 'slide-next') {
+     slides.last().after(slides.first());
+     activeSlide.removeClass('theactive').next('.itemslide').addClass('theactive');
+  }
+
+  
+  if (button.attr('id') == 'slide-previous') {
+    
+    slides.first().before(slides.last());
+   
+    activeSlide.removeClass('theactive').prev('.itemslide').addClass('theactive');
+  }
+});
+
+
+
+
+
+
+  });
+</script>
 </body>
 
-<!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:41:10 GMT -->
 </html>
