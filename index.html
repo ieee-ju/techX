@@ -20,6 +20,13 @@
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <!--Personalised Styles-->
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <style type="text/css">
 body{
     scroll-behavior: smooth !important;
@@ -41,6 +48,19 @@ body{
 	margin-left: 10px;
 	flex: 40%;
 }
+.tracks-info.jumbotron.active-info{
+	background-color: #4b1ece;
+	color: #fff;
+}
+.active-info .float-text img{
+	opacity: 0.14!important;
+	filter: saturate(0) invert(100%) !important;
+}
+.tracks-info.jumbotron.active-info .sec-title{
+	color: #fff;
+	font-weight: bolder;
+}
+
 @media only screen and (max-width:990px ){
 	.tracks-info.jumbotron{
 		flex: 100%;
@@ -59,6 +79,108 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*hover effect*/
+/*----- features -----*/
+.feature-section-two.style-two .feature-block-two:after{
+  right:15px;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two .inner-box::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two::before{
+  left: 15px;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two .inner-box::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two::before, .feature-section-two.style-two .feature-block-two::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #11124a;
+
+}
+
+.feature-section-two.style-two .feature-block-two .inner-box::before, .feature-section-two.style-two .feature-block-two .inner-box::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #11124a;
+
+}
+
+
+
+
+.feature-section-two.style-two .feature-block-two:hover::before, .feature-section-two.style-two .feature-block-two:hover::after{
+  width: calc(100% - 30px);
+}
+.feature-section-two.style-two .feature-block-two:hover .inner-box::before, .feature-section-two.style-two .feature-block-two:hover .inner-box::after{
+  height: 100%;
+}
+
+
+
+
+.feature-section-two.style-two .feature-block-two .inner-box{
+	padding-bottom: 20px;
+    padding-right: 0;
+    height: 100%;
+    border:0.5px solid #dedede;
+}
+
+@media only screen and (max-width: 1100px){
+	.feature-section-two.style-two.col-lg-4{
+		flex: 0 0 49%;
+		max-width: 49%;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pricing-section.style-four .pricing-block .query-on-hover{
+	display: none;
+}
+.pricing-section.style-four .pricing-block .queryis i{
+	cursor: pointer;
+}
+.pricing-section.style-four .pricing-block .queryis:hover .query-on-hover{
+	display: block;
+
+}
 
 .pricing-section.style-four .pricing-block .original{
 	text-decoration: line-through;
@@ -987,69 +1109,69 @@ ul.speakers-type-list .speakers-active:hover li{
         <div class="auto-container">
             <div class="row">
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-1.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/speakers.png" alt=""></div>
                         <h4><a href="#">Industry Speakers</a></h4>
                         <div class="text">Learn from the leading experts at Intel, Google, Cisco, IEEE and more.</div>
                     </div>
                 </div>
 
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-2.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/delegates.png" alt=""></div>
                         <h4><a href="#">250+ Delegates</a></h4>
                         <div class="text">Meet people from the leading universities in the country.</div>
                     </div>
                 </div>
 
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-3.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/hands-on-experience.png" alt=""></div>
                         <h4><a href="#">Hands-On Experiences</a></h4>
                         <div class="text">Exciting workshops where you experience the bleeding edge of tech with your own hands.</div>
                     </div>
                 </div>
 
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/Innovative-challenges.png" alt=""></div>
                         <h4><a href="#">Innovative Challenges</a></h4>
                         <div class="text">Specially curated contests in every track to put your skills to the test.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/networking.png" alt=""></div>
                         <h4><a href="#">Networking Sessions</a></h4>
                         <div class="text">Exclusive sessions for network building. 
 								<br>Because. Connections. Matter.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/Branch-meet.png" alt=""></div>
                         <h4><a href="#">IEEE Student Branch Meet</a></h4>
                         <div class="text">Get exclusive access to future events before anyone else!</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/leadership.png" alt=""></div>
                         <h4><a href="#">Campus to Corporate Leap</a></h4>
                         <div class="text">Develop the skills needed to face the corporate at our panel discussion.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/exotic-location.png" alt=""></div>
                         <h4><a href="#">Exotic Location</a></h4>
                         <div class="text">Poolside events and beachside ice-breaking sessions. 
 							<br>Because Why Not?
@@ -1057,17 +1179,17 @@ ul.speakers-type-list .speakers-active:hover li{
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/socials.png" alt=""></div>
                         <h4><a href="#">Socials</a></h4>
                         <div class="text">Music and cultural gigs are always in high demand.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/gala-dinner.png" alt=""></div>
                         <h4><a href="#">Gala Dinner</a></h4>
                         <div class="text">Indulge in the finest culinary cuisines at a luxury resort. </div>
                     </div>
@@ -1270,20 +1392,22 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
             <div class="tracks-container">
-            	<div class="tracks-info jumbotron wow fadeInUp">
+            	<div class="tracks-info active-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Artificial Intelligence & Machine Learning</h4>
+            			<h4>Deep Learning and Neural Networks</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/ml.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>Workshops, and engaging sessions to enhance your concepts of Artificial Intelligence together with Machine Learning that bestows a satisfying learning experience.</span>
+            			<span>Neural Networks is the powering stone for the next generation of future applications. With applications embedded in every domain and industry, this skill has become indispensable to modern engineers for truly make an impact. Learn to build powerful scalable AI-enabled applications and get a holistic overview on the future of the Machine Learning.</span>
             		</div>
             	</div>
             	<div class="tracks-info jumbotron wow fadeInUp">
             		<div class="sec-title">
             			<h4>5G - Networking</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/5G.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>It’s 5G and it’s fast. Expect powerful talks, hands-on workshops and a plethora of learning opportunities. 
+            			<span>With the advent of high-speed internet, the world has evolved to support more powerful applications which would not have been possible without 5G. One of the most advanced developments in modern communications, which can support speeds of up to Giga-bits-per-second, this hands-on workshop and keynote session will enable you to build the next impact driven 5G applications.
 							</span>
             		</div>
             	</div>
@@ -1291,32 +1415,38 @@ ul.speakers-type-list .speakers-active:hover li{
             		<div class="sec-title">
             			<h4>Circuit Design and PCB</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/pcb.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>A one-of-a-kind PCB designing workshop that took several IEEE events by a whiff, we now look forward to seeing the same amount of enthusiasm in TechX. Expect to gather knowledge, experience and have loads of fun with electronics!</span>
+            			<span>A Hands-on workshop mainly focused to attract makers and developers to learn about the intricacies of Electronics. It was mainly focused to enable students to learn Electronics and understand the practical aspects of it. Though a very complicated topic, this experience will allow you to design Printed Circuit Boards(PCBs) and build real circuits and watch them come to live.</span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron wow fadeInUp">
+            	<div class="tracks-info active-info  jumbotron wow fadeInUp">
+
             		<div class="sec-title">
             			<h4>Leadership</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/lead.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>Leaders are how we perceive them. A leader and an innovator, Imbesat Ahmed,shall light us towards shaping one of the most sought after skills in today’s generation.   </span>
+            			<span>Learn to lead. Technology is important, however without the proper set of leadership skills it’s seldom possible to stand out in a crowd. Learn to combine technology with leadership to drive the next generation of products in the market. Learn through specially designed challenges and workshops to bring out the leader in you.
+						  </span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron wow fadeInUp">
+            	<div class="tracks-info active-info jumbotron wow fadeInUp">
             		<div class="sec-title">
             			<h4>Competitive Programming </h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/coding.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span></span>
+            			<span>With programming giants focusing on competitive coding examinations, learning to thrive in this domain is crucial for most software aspirants. Learn the tactics of navigating through the challenges and puzzles at this engaging workshop and keynote.</span>
             		</div>
             	</div>
             	<div class="tracks-info jumbotron wow fadeInUp">
             		<div class="sec-title">
             			<h4>Progressive Web Apps (PWA) Workshop</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/webapp.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span></span>
+            			<span>A Progressive Web App is a web app that uses modern web capabilities to deliver an app-like experience to users. With modern applications like Whatsapp and Facebook heavily relying on this technology to provide a seamless UX to their user base, learning this skill will allow you to deliver a uniform experience of your software idea throughout OS. This hands-on workshop will ensure you leave the session with a self-designed PWA application in your pocket.</span>
             		</div>
             	</div>
 
@@ -1949,6 +2079,14 @@ ul.speakers-type-list .speakers-active:hover li{
             <div class="row">
                 
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                		<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
+                		
+                		<i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 13px;"></i>
+                		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
+                			<span class="text" style="font-size: 13px;">
+                				<h3 style="font-size: 14px;">Why are the ticket prices so high?</h3>
+                				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
+                	</div>
                     <div class="inner-box">
                         <div class="price early">INR 2299</div>
                          <div class="price original">2499</div>
@@ -1968,6 +2106,14 @@ ul.speakers-type-list .speakers-active:hover li{
 
                 
                 <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+                		<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
+                		
+                		<i class="fa fa-question-circle-o" aria-hidden="true" style="color: #fff; font-size: 13px;"></i>
+                		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
+                			<span class="text" style="font-size: 13px;">
+                				<h3 style="font-size: 14px;">Why are the ticket prices so high?</h3>
+                				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
+                	</div>
                      <div class="inner-box">
                         <div class="price early">INR 1799</div>
                         <div class="price original">1999</div>
@@ -1987,6 +2133,14 @@ ul.speakers-type-list .speakers-active:hover li{
 
                 
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                	<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
+                		
+                		<i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 13px;"></i>
+                		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
+                			<span class="text" style="font-size: 13px;">
+                				<h3 style="font-size: 14px;">Why are the ticket prices so high?</h3>
+                				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
+                	</div>
                      <div class="inner-box">
                         <div class="price early">INR 2799</div>
                          <div class="price original">2999</div>
@@ -2045,6 +2199,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
                 
                 <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+                	
                      <div class="inner-box">
                         <div class="price">INR 2499</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
