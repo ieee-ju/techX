@@ -605,7 +605,7 @@ body{
 
 .banner-section{
 	width: 100vw;
-	background:linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.7)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;
+	background:linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: 120%;
 	background-attachment: fixed;
 	height: 100vh !important;
 	overflow: hidden;
@@ -2787,9 +2787,9 @@ $('.button').on('click', function() {
 <script type="text/javascript">
 	$(window).mousemove(function(e){
 
-		//xpos = e.pageX;
-		//ypos = e.pageY;
-		//$(".banner-section").css("background-position",-xpos/26+"px "+"-"+ypos/20+"px")
+		xpos = e.pageX;
+		ypos = e.pageY;
+		$(".banner-section").css("background-position",-xpos/26+"px "+"-"+ypos/20+"px")
 	})
 </script>
 </body>
