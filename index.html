@@ -80,7 +80,7 @@ body{
 	color: #fff;
 }
 .active-info .float-text img{
-	opacity: 0.14!important;
+	opacity: 0.24!important;
 	filter: saturate(0) invert(100%) !important;
 }
 .tracks-info.jumbotron.active-info .sec-title{
@@ -89,11 +89,23 @@ body{
 }
 
 @media only screen and (max-width:990px ){
+	.main-menu .navbar-header .navbar-toggler{
+		margin-top: -15px;
+	}
 	.tracks-info.jumbotron{
 		flex: 100%;
 	}
+	.feature-section-two.style-two .feature-block-two{
+		margin-bottom: 16px;
+	}
 	.feature-section-two.style-two .feature-block-two .inner-box{
-		border:1px solid #11124a;
+		
+		padding-top: 10px;
+	}
+
+
+	.events-highlight .float-text{
+		display: block!important;
 	}
 }
 .tracks-info.jumbotron .sec-title{
@@ -199,7 +211,18 @@ body{
 
 
 .pricing-section.style-four .pricing-block .query-on-hover{
+	cursor: text;
 	display: none;
+	padding: 9px!important;
+}
+.pricing-section.style-four .pricing-block .queryis{
+	cursor: pointer;
+}
+.pricing-section.style-four .pricing-block.not-active:hover .queryis i{
+	color: #f2048a !important;
+}
+.pricing-section.style-four .pricing-block.not-active:hover .queryis span h3{
+	color: #f9348a!important;
 }
 .pricing-section.style-four .pricing-block .queryis i{
 	cursor: pointer;
@@ -631,8 +654,15 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+.topics-section-two.style-two{
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	padding-top: 40px;
+}
 
+.event-topics-tabs .image-column .image{
 
+}
 
 
 
@@ -735,6 +765,29 @@ ul.speakers-type-list .speakers-active:hover li{
 	.pricing-section.style-four .pricing-block .inner-box{
 		padding-top: 120px;
 	}
+	.mobile-inactive-info{
+		background-color: #e9ecef !important;
+		color: unset!important;
+	}
+	.mobile-active-info{
+		background-color: #4b1ece!important;
+		color: #fff!important;
+	}
+	.mobile-active-info .sec-title{
+		color: #fff!important;
+	}
+	.mobile-inactive-info .sec-title{
+		color: #11124a!important;
+	}
+	.mobile-active-info .float-text img{
+		opacity: 0.14!important;
+       filter: saturate(0) invert(100%) !important;
+	}
+	.mobile-inactive-info .float-text img{
+		opacity: 0.14!important;
+       filter: saturate(0) !important;
+	}
+
 }
 
 
@@ -1370,7 +1423,7 @@ ul.speakers-type-list .speakers-active:hover li{
                         </div>
 
                         
-                        <div class="content-details" id="">
+                       <!-- <div class="content-details" id="">
                             <div class="row">
                             	<div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
@@ -1389,7 +1442,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                 </div>
                                 
                             </div>
-                        </div>
+                        </div>-->
 
                         
                         
@@ -1423,7 +1476,7 @@ ul.speakers-type-list .speakers-active:hover li{
             <div class="tracks-container">
             	<div class="tracks-info active-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Deep Learning and Neural Networks</h4>
+            			<h4>Deep Learning and Neural Networks track</h4>
             		</div>
             		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/ml.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
@@ -1432,7 +1485,7 @@ ul.speakers-type-list .speakers-active:hover li{
             	</div>
             	<div class="tracks-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>5G - Networking</h4>
+            			<h4>5G Networks track</h4>
             		</div>
             		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/5G.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
@@ -1440,19 +1493,19 @@ ul.speakers-type-list .speakers-active:hover li{
 							</span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron wow fadeInUp">
+            	<div class="tracks-info jumbotron  mobile-active-info wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Circuit Design and PCB</h4>
+            			<h4>Circuit Design and PCB track</h4>
             		</div>
             		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/pcb.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
             			<span>A Hands-on workshop mainly focused to attract makers and developers to learn about the intricacies of Electronics. It was mainly focused to enable students to learn Electronics and understand the practical aspects of it. Though a very complicated topic, this experience will allow you to design Printed Circuit Boards(PCBs) and build real circuits and watch them come to live.</span>
             		</div>
             	</div>
-            	<div class="tracks-info active-info  jumbotron wow fadeInUp">
+            	<div class="tracks-info active-info mobile-inactive-info  jumbotron wow fadeInUp">
 
             		<div class="sec-title">
-            			<h4>Leadership</h4>
+            			<h4>Leadership track</h4>
             		</div>
             		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/lead.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
@@ -1462,7 +1515,7 @@ ul.speakers-type-list .speakers-active:hover li{
             	</div>
             	<div class="tracks-info active-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Competitive Programming </h4>
+            			<h4>Competitive Programming track</h4>
             		</div>
             		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/coding.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
@@ -1471,7 +1524,7 @@ ul.speakers-type-list .speakers-active:hover li{
             	</div>
             	<div class="tracks-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Progressive Web Apps (PWA) Workshop</h4>
+            			<h4>Progressive Web Apps (PWA) Workshop track</h4>
             		</div>
             		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/webapp.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
@@ -2107,13 +2160,15 @@ ul.speakers-type-list .speakers-active:hover li{
 
             <div class="row">
                 
-                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="pricing-block not-active col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                 		<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
-                		
-                		<i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 13px;"></i>
+                		<span style="display: flex;">
+                		    <i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 13px; padding-top: 2.5px;"></i>
+                		    <h3 style="font-size: 12px; color: #11124a;padding-left: 6px;">Why are the ticket prices so high?</h3>
+                		</span>
                 		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
                 			<span class="text" style="font-size: 13px;">
-                				<h3 style="font-size: 14px;">Why are the ticket prices so high?</h3>
+                				
                 				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
                 	</div>
                     <div class="inner-box">
@@ -2136,11 +2191,13 @@ ul.speakers-type-list .speakers-active:hover li{
                 
                 <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                 		<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
-                		
-                		<i class="fa fa-question-circle-o" aria-hidden="true" style="color: #fff; font-size: 13px;"></i>
+                		<span style="display: flex;">
+                		    <i class="fa fa-question-circle-o" aria-hidden="true" style="color: #fff; font-size: 13px; padding-top: 2.5px;"></i>
+                		    <h3 style="font-size: 12px; color: #fff;padding-left: 6px;">Why are the ticket prices so high?</h3>
+                		</span>
                 		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
                 			<span class="text" style="font-size: 13px;">
-                				<h3 style="font-size: 14px;">Why are the ticket prices so high?</h3>
+                				
                 				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
                 	</div>
                      <div class="inner-box">
@@ -2161,13 +2218,15 @@ ul.speakers-type-list .speakers-active:hover li{
                 </div>
 
                 
-                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="pricing-block not-active col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                 	<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
-                		
-                		<i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 13px;"></i>
+                		<span style="display: flex;">
+                		    <i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 13px; padding-top: 2.5px;"></i>
+                		    <h3 style="font-size: 12px; color: #11124a;padding-left: 6px;">Why are the ticket prices so high?</h3>
+                		</span>
                 		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
                 			<span class="text" style="font-size: 13px;">
-                				<h3 style="font-size: 14px;">Why are the ticket prices so high?</h3>
+                				
                 				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
                 	</div>
                      <div class="inner-box">
