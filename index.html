@@ -517,7 +517,7 @@ body{
 
 .banner-section{
 	width: 100vw;
-	background:linear-gradient(to bottom , rgba(18, 17, 74,0) , rgba(18, 17, 74,0)),url(images/main-slider/intro-page.png) ,linear-gradient(to left , #12114a , #12114a); background-size: 120%;
+	background:linear-gradient(to bottom , rgba(18, 17, 74,0) , rgba(18, 17, 74,0)),url(images/main-slider/intro-page.png) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;
 	background-attachment: fixed;
 	height: 100vh !important;
 	overflow: hidden;
@@ -3034,7 +3034,7 @@ $('.button').on('click', function() {
 
 		xpos = e.pageX;
 		ypos = e.pageY;
-		$(".banner-section").css("background-position",-xpos/26+"px "+"-"+ypos/20+"px")
+		//$(".banner-section").css("background-position",-xpos/26+"px "+"-"+ypos/20+"px")
 	})
 </script>
 </body>
