@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/schedule.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:43:08 GMT -->
+<head>
+<meta charset="utf-8">
+<title>TechX | Team</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
+<link rel="icon" href="images/favicon1.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+    
+
+
+
+
+
+
+
+
+
+    .main-footer ul li{
+    padding-bottom: 4px;
+    color: #fff;
+}
+.main-footer h6{
+    padding-bottom: 13px;
+}
+.main-footer a{
+    color: #fff!important;
+}
+
+
+
+
+
+
+
+/*----our team section-------*/
+    .Team-container{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: transparent;
+}
+.Team-container .col-lg-3{
+
+}
+.our-team{
+    text-align: center;
+    margin-bottom: 25px;
+    /*-webkit-box-shadow: 9px 9px 12px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 12px -6px rgba(0,0,0,0.75);
+    box-shadow: 9px 9px 12px -6px rgba(0,0,0,0.75);*/
+    -webkit-box-shadow: 18px 38px 105px -25px rgba(0,0,0,0.29);
+-moz-box-shadow: 18px 38px 105px -25px rgba(0,0,0,0.29);
+box-shadow: 18px 38px 105px -25px rgba(0,0,0,0.29);
+    border: 0.5px solid #dedede;
+    border-radius: 0.433rem;
+    
+
+}
+.Team-container .our-team .team_img{
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 0.433rem;
+    border-top-right-radius: 0.433rem;
+}
+.Team-container .our-team .team_img:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.Team-container .our-team:hover .team_img:after{
+    bottom: 0;
+}
+.Team-container .our-team img{
+    width: 100%;
+    height: auto;
+}
+.Team-container .our-team .social{
+    padding: 0 0 18px 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: -100%;
+    right: 10px;
+    background: #f20487;
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.Team-container .our-team:hover .social{
+    top: 0;
+}
+.Team-container .our-team .social li a{
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+}
+.Team-container .our-team:hover .social li a:hover{
+    color: #2a4284;
+}
+.Team-container .our-team .team-content{
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 0.433rem;
+
+}
+.Team-container .our-team .team-content::before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    background-color: 
+}
+.Team-container .our-team .title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f2048a;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+    position: relative;
+}
+.Team-container .our-team .title:before{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #4b1ece;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    margin-right: 9px;
+    transition-duration: 0.25s;
+}
+.Team-container .our-team .title:after{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #4b1ece;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: 9px;
+    transition-duration: 0.25s;
+}
+.Team-container .our-team:hover .title:before,
+.Team-container .our-team:hover .title:after{
+    width: 50px;
+}
+.Team-container .our-team .post{
+    display: inline-block;
+    font-size: 15px;
+    color:  #11124a;
+    text-transform: capitalize;
+}
+.Team-container .our-team .post:before{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4b1ece;
+    margin: 0 auto;
+    position: relative;
+    top: -13px;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+
+
+
+
+
+/*-----end team section-----*/
+
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+   <!-- Main Header-->
+    <header class="main-header header-style-three">
+        <!--Header-Upper-->
+        <div class="header-upper">
+            <div class="outer-container">
+                <div class="clearfix">
+                    
+                    <div class="pull-left logo-box">
+                        <div class="logo"><a href="#"><img src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
+                    </div>
+                    
+                    
+                    
+                    <div class="nav-outer clearfix">
+                    
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md">
+                            <div class="navbar-header">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="dropdown"><a href="index.html">Home</a>
+                                     
+                                    </li>
+                                    <li class="dropdown"><a href="about.html">About</a>
+                                        
+                                    </li>
+
+                                    
+                                    <li class="current"><a href="#">Team</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    
+                                   
+                                    <li><a href="#footer">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        
+            
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+    </header>
+    <!--End Main Header -->
+
+
+ 
+
+    <!--Page Title-->
+    <section class="page-title" style="background: linear-gradient(-45deg , rgba(130,30,100,0.9),rgba(70,40,120,0.9),rgba(60,40,150,0.9)) ,url(images/background/8.jpg);">
+        <div class="auto-container">
+            <span class="float-text">Our Team</span>
+            <h1>Our Team</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html">Home </a></li>
+                <li>Our Team</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--Our team section-->
+
+    <section class="Team-container">
+        <div class="auto-container">
+            <span class="float-text">Our Team</span>
+            <div class="sec-title">
+                <h2>Our Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="team_img">
+                            <img src="images/team/Soumya-Kashyap.jpg">
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/soumya.kashyap.5249"><i class="fa fa-facebook"></i></a></li>
+                            
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Soumya Kashyap</h3>
+                            <span class="post">Programme Chair</span>
+                        </div>
+                    </div>
+                </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Saptarshi-Ghosh.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Saptarshi Ghosh</h3>
+                        <span class="post">Organising Chairperson</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/ANIMESH.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Animesh Datta</h3>
+                        <span class="post">Organising Chairperson</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Abhishek_singh.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Abhishek Singh</h3>
+                        <span class="post">Technical co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/mainak.jpg">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/mainak.pal.5"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Mainak Pal</h3>
+                        <span class="post">Technical co-lead</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Tamoghno.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Tamoghno Das</h3>
+                        <span class="post">Design co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Ishani.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Ishani Nag</h3>
+                        <span class="post">Design co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Soumya.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Soumya Deep Roy</h3>
+                        <span class="post">Design co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Amitava.jpg">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/profile.php?id=100006949692977"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Amitava Das</h3>
+                        <span class="post">Sponsorship Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Mayank-Agarwal.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Mayank Agarwal</h3>
+                        <span class="post">Sponsorship Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/monsij.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Monsij Biswal</h3>
+                        <span class="post">Registration Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Rohan-Mitra.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Rohan Mitra</h3>
+                        <span class="post">Registration Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Yogesh.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Yogesh Chandra Prasad</h3>
+                        <span class="post">Publicity and outreach co-lead</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Subhadeep-Chandra.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Subhadeep Chandra</h3>
+                        <span class="post">Publicity and outreach co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Madan_Gopal_Tiwary.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Madan Gopal Tiwary</h3>
+                        <span class="post">Venue & Hospitality Lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Prateekee2.jpg" style="opacity: 0.85;">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Prateekee Chatterjee</h3>
+                        <span class="post">Content Co-lead</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Gangesh_Shaw.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Gangesh Shaw</h3>
+                        <span class="post">Logistics co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </section>
+            
+    <!--end Our team section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    <!-- Main Footer -->
+    <div class="main-footer" id="footer">    
+        <div class="anim-icons">
+            <span class="icon icon-twist-line-1 wow zoomIn"></span>
+            <span class="icon icon-circle-6 wow zoomIn" data-wow-delay="400ms"></span>
+            <span class="icon icon-twist-line-2 wow zoomIn" data-wow-delay="800ms"></span>
+            <span class="icon icon-circle-8 wow zoomIn" data-wow-delay="1200ms"></span>
+        </div>
+        <div class="auto-container">
+            <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" style="color: #fff;">
+            <h2 style="font-weight: lighter;color: #fff;" >Tech<font style="font-family: sans-serif; font-size: 40px; font-weight: bold;">X</font></h2>
+            <p class="text-justify" style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="color: #f20487;font-size: 28px;">Contacts</h6>
+            <ul class="footer-links">
+              <li style="font-weight: bolder;">Saptarshi Ghosh </li>
+              
+              <li>+91 98361 05125</li>
+              <li></li>
+              <li style="font-weight: bolder;">Animesh Datta</li>
+         
+              <li>+91 85849 70760</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="color: #f20487;font-size: 28px;">Quick Links</h6>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              
+              
+              <li><a href="register.html">Register</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons row">
+              <li style="padding-right: 12px;"><a class="facebook" href="https://www.facebook.com/techX.congress/"><i class="fa fa-facebook"></i></a></li>
+              <li style="padding-right: 12px;"><a class="instagram" href="https://www.instagram.com/techx_ieee/"><i class="fa fa-instagram"></i></a></li>
+              
+              <li><a class="Mail" href="mailto:techx.congress@gmail.com"><i class="fa fa-envelope"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+
+            <!--<div class="row">
+                <div class="cntact-us col-lg-4 description-data">
+                    <div class="sec-title text-center light">
+                        
+                        <h2 style="font-weight: lighter;">Tech<font style="font-family: sans-serif; font-size: 40px; font-weight: bold;">X</font></h2>
+                        <p style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
+                    </div>
+
+                </div>
+                <div class="cntact-us col-lg-4 contact-us-data">
+                    <div class="contact-info-sec" style="color: #fff;">
+                         <br>
+                        Saptarshi Ghosh <br>
+                        Organising Co-Chair <br>
+                        +91 98361 05125 <br>
+
+                        Animesh Datta <br>
+                        Organising Co-Chair <br>
+                        +91 85849 70760 <br>
+                    </div>
+                    
+                    <div class="social-links-data">
+                        <ul>
+                             <li><a href="https://www.facebook.com/techX.congress/"><span class="fab fa-facebook-f"></span></a></li>
+                    
+                             <li><a href="https://www.instagram.com/techx_ieee/"><span class="fab fa-instagram"></span></a></li>
+                             <li><a href="mailto:techx.congress@gmail.com"><span class="fa fa-envelope"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cntact-us col-lg-4 page-links">
+                      <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sch">Schedule</a></li>
+                    <li><a href="#speakers-section">Speakers</a></li>
+                    <li><a href="#spns">Sponsors</a></li>
+                   
+                </ul>  
+                </div>-->
+            </div>
+            
+
+            <!--Newsletter Form-->
+            <!--<div class="newsletter-form">
+                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/blog.html">
+                    <div class="form-group">
+                        <input type="email" name="field-name" value="" placeholder="email@gmail.com" required>
+                        <button type="submit" class="theme-btn btn-style-three">Send</button>
+                    </div>
+                </form>
+            </div>-->
+
+           
+
+
+
+            <!-- Copyright -->
+            <div class="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
+        </div>
+    </div>
+    <!-- End Footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+<!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/schedule.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:43:20 GMT -->
+</html>
