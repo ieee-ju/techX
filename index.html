@@ -544,6 +544,54 @@ body{
 
 
 
+@media only screen and (min-width: 880px){
+.notstudent::before{
+	content: "";
+	height: 70px;
+	width: 90px;
+	display: block;
+	position: absolute;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+	background-color:#898989;
+	z-index: -1;
+	left: 0;
+	opacity: 0.5;
+	margin-top: -20px;
+
+
+}
+.notstudent{
+	
+	font-size: 22px;
+}
+}
+
+@media only screen and (max-width: 880px){
+	.notstudent{
+		
+		right: 10px!important;
+		font-weight: bolder;
+		margin-top: 5px;
+	}
+	.notstudent::before{
+	content: "";
+	height: 40px;
+	width: 50px;
+	display: block;
+	position: absolute;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+	background-color:#a9a9a9;
+	z-index: -1;
+	left: 0;
+	opacity: 0.5;
+	margin-top: -5px;
+
+
+}
+}
+
+
+
 
 
 
@@ -1812,7 +1860,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
     <!--Early-bird Pricing Section -->
     <section class="pricing-section style-four Early-bird" id="reg">
-	    <a href="tickets.html" class="btn btn-link" style="z-index: 77; position: absolute;  cursor: pointer; color: #f20487;right: 90px; margin-top: 0px;">Not a Student?</a>
+	    <a href="tickets.html" class="btn btn-link notstudent" style="z-index: 77; position: absolute;  cursor: pointer; color: #12114a;right: 90px; margin-top: 0px;">Not a Student?</a>
         <div class="anim-icons">
             <span class="icon icon-circle-1 wow zoomIn"></span>
             <span class="icon icon-circle-2 wow zoomIn" data-wow-delay="600ms"></span>
